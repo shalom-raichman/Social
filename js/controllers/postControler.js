@@ -9,7 +9,76 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import express from "express";
 const router = express.Router();
-router.post("/login", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        res.status(200).json({
+            err: false,
+            message: "I was way to lazy to change the defult message",
+            data: undefined
+        });
+    }
+    catch (err) {
+        res.status(400);
+        res.json({
+            err: true,
+            message: "I was way to lazy to change the defult message",
+            data: null
+        });
+    }
+}));
+router.post("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        res.status(200).json({
+            err: false,
+            message: "I was way to lazy to change the defult message",
+            data: undefined
+        });
+    }
+    catch (err) {
+        res.status(400);
+        res.json({
+            err: true,
+            message: "I was way to lazy to change the defult message",
+            data: null
+        });
+    }
+}));
+// query params: ?titel=x&data=23/04/24
+router.get("/search", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        res.status(200).json({
+            err: false,
+            message: "I was way to lazy to change the defult message",
+            data: undefined
+        });
+    }
+    catch (err) {
+        res.status(400);
+        res.json({
+            err: true,
+            message: "I was way to lazy to change the defult message",
+            data: null
+        });
+    }
+}));
+router.get("/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        res.status(200).json({
+            err: false,
+            message: "I was way to lazy to change the defult message",
+            data: undefined
+        });
+    }
+    catch (err) {
+        res.status(400);
+        res.json({
+            err: true,
+            message: "I was way to lazy to change the defult message",
+            data: null
+        });
+    }
+}));
+router.patch("/like/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         res.status(200).json({
             err: false,
