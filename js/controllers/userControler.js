@@ -115,38 +115,4 @@ router.get("/following", (req, res) => __awaiter(void 0, void 0, void 0, functio
         });
     }
 }));
-router.get("/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        res.status(200).json({
-            err: false,
-            message: "I was way to lazy to change the defult message",
-            data: undefined
-        });
-    }
-    catch (err) {
-        res.status(400);
-        res.json({
-            err: true,
-            message: "I was way to lazy to change the defult message",
-            data: null
-        });
-    }
-}));
-router.patch("/like/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        res.status(200).json({
-            err: false,
-            message: "I was way to lazy to change the defult message",
-            data: undefined
-        });
-    }
-    catch (err) {
-        res.status(400);
-        res.json({
-            err: true,
-            message: "I was way to lazy to change the defult message",
-            data: null
-        });
-    }
-}));
 export default router;
