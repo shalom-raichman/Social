@@ -12,7 +12,7 @@ router.post("/register", async (
         if(!result) throw new Error("Cant Save New User to the file");
         res.status(200).json({
             err: false,
-            message: "I was way to lazy to change the defult message",
+            message: "Welcome" + req.body.username,
             data: req.body
         })       
     } catch (err) {
