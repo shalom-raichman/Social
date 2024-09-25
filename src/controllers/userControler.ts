@@ -1,14 +1,19 @@
 import express, { Router, Request, Response }  from "express"
+import userService from "../sevices/userService"
+import NewUserDTO from "../DTO/newUser"
 
 const router:Router = express.Router()
 
-router.post("/register", async (req: Request, res: Response): Promise<void> => {
+router.post("/register", async (
+        req: Request<any, any, NewUserDTO>,
+        res: Response): Promise<void> => {
     try {
-        
+        const result = await userService.createNewUser(req.body)
+        if(!result) throw new Error("Cant Save New User to the file");
         res.status(200).json({
             err: false,
             message: "I was way to lazy to change the defult message",
-            data: undefined
+            data: req.body
         })       
     } catch (err) {
         res.status(400)
