@@ -8,9 +8,12 @@ import "dotenv/config"
 
 const app: Express = express()
 
+app.use(express.json())
+
 app.use("/auth", authControler)
 app.use("/user", userControler)
 app.use("/post", postControler)
 
-app.listen(process.env.PORT, (): void => console.log(`See you at http::localhost:${process.env.PORT}`))
+app.listen(process.env.PORT, (): void => console.log(`See you at http://localhost:${process.env.PORT}`))
+
 
