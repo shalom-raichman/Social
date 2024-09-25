@@ -2,3 +2,4 @@
 .env
 /js
 users.json
+posts.json
