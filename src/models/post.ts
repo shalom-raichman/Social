@@ -8,7 +8,7 @@ class Post{
     constructor(
         public aoutorId: string,
         public content:  string,
-        public hashtags: string,
+        public hashtags: string[],
         public ref?:     string,
     ) {
         this.id = v4()
