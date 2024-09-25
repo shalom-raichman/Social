@@ -6,6 +6,7 @@ class User{
     public following:  string[] = []
     public isLockedAccount: boolean = false
     public token?: string
+    
     constructor(
         public username:  string,
         public password:  string,
