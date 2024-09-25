@@ -19,6 +19,8 @@ router.post("/register", async (req: Request, res: Response): Promise<void> => {
         })
     }
 })
+
+// protected rout
 router.post("/follow", async (req: Request, res: Response): Promise<void> => {
     try {
         
@@ -56,6 +58,7 @@ router.get("/search", async (req: Request, res: Response): Promise<void> => {
     }
 })
 
+// protected rout
 // query params: ?type=MINE|ELSE
 router.get("/profile", async (req: Request, res: Response): Promise<void> => {
     try {
@@ -74,6 +77,7 @@ router.get("/profile", async (req: Request, res: Response): Promise<void> => {
         })
     }
 })
+
 // query params: ?type=MINE|ELSE
 router.get("/followers", async (req: Request, res: Response): Promise<void> => {
     try {
@@ -92,6 +96,7 @@ router.get("/followers", async (req: Request, res: Response): Promise<void> => {
         })
     }
 })
+
 // query params: ?type=MINE|ELSE
 router.get("/following", async (req: Request, res: Response): Promise<void> => {
     try {

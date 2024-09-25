@@ -1,7 +1,7 @@
 import express, { Express } from "express"
-import authControler from "./controllers/authControler.js"
-import userControler from "./controllers/userControler.js"
-import postControler from "./controllers/postControler.js"
+import authControler from "./controllers/authControler"
+import userControler from "./controllers/userControler"
+import postControler from "./controllers/postControler"
 
 // import and load enviroment variables
 import "dotenv/config"
